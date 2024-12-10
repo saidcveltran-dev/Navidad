@@ -1,0 +1,38 @@
+/* Preguntas frecuentes */
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFD700; /* Amarillo pastel */
+}

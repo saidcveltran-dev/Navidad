@@ -1,0 +1,98 @@
+/* Configuración básica */
+body {
+    background: linear-gradient(to bottom, #2d2d2d, #dc143c);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header, footer, main {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header img {
+    max-width: 150px;
+    margin: 0 auto 20px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+/* Botones generales */
+button {
+    padding: 15px 30px;
+    background: crimson;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgb(122, 3, 3);
+}
+
+/* Ajustes para centrar la ruleta */
+#roulette-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.roulette-segment {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    transform-origin: 100% 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+/* Ajustes responsivos globales */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header, footer, main {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
