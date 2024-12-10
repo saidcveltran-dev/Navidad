@@ -1,5 +1,5 @@
 // Configuración del sorteo
-const eventDate = new Date('2024-12-10T10:50:30'); // Fecha y hora del sorteo
+const eventDate = new Date('2024-12-10T11:00:00'); // Fecha y hora del sorteo
 const countdownElement = document.getElementById('countdown');
 const eventDateElement = document.getElementById('event-date');
 let sorteoRealizado = false; // Estado del sorteo
