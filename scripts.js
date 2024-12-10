@@ -33,7 +33,7 @@ function updateCountdown() {
 }
 
 // Temporizador adicional de 10 segundos
-let secondaryCountdownStarted = false;
+let secondaryCountdownStarted = true;
 
 function startSecondaryCountdown() {
     const now = new Date();
@@ -113,6 +113,19 @@ function sendWebhookAlert() {
     }).then(response => console.log("Webhook de alerta enviado."))
       .catch(console.error);
 }
-
+// Muestra el conteo de jugadores de SurCraft Network
+fetch('https://api.mcsrvstat.us/2/play.surcraft.xyz')
+    .then(response => response.json())
+    .then(data => {
+        if (data.online) {
+            document.getElementById('player-count').textContent = 
+                `${data.players.online}`;
+        } else {
+            document.getElementById('player-count').textContent = "Servidor offline";
+        }
+    })
+    .catch(() => {
+        document.getElementById('player-count').textContent = "Error al cargar";
+    });
 // Iniciar temporizador
 const interval = setInterval(updateCountdown, 1000);
